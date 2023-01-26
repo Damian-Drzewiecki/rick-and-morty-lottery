@@ -1,10 +1,10 @@
-import './App.css';
+import './App.scss';
 import { useEffect, useState } from 'react';
 
-function App() {
+export default function App() {
   const [maxCount, setMaxCount] = useState()
   const [randomId, setRandomId] = useState(null)
-  const [character, setCharacter] = useState()
+  const [character, setCharacter] = useState(0)
 
   function randomCharacter(lastCharacterId) {
     setRandomId(Math.floor(Math.random() * (lastCharacterId - 1)))
@@ -31,8 +31,15 @@ function App() {
   return (
     <div>
       <button type='button' onClick={() => randomCharacter(maxCount)}>Click me dude</button>
+      <div>
+        <img src={character.image} alt=""></img>
+        <p>ID:{character.id}</p>
+        <p>NAME:{character.name}</p>
+        <p>GENDER:{character.gender}</p>
+        <p>SPECIES:{character.species}</p>
+        <p>STATUS:{character.status}</p>
+        <p>TYPE:{character.type}</p>
+      </div>
     </div>
   )
 }
-
-export default App;
