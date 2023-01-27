@@ -1,0 +1,301 @@
+.smallStars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url("assets/small_stars.png");
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    background-repeat: repeat;
+    animation-name: movingstars;
+    animation-duration: 160s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.mediumStars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/medium_stars.png");
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    background-repeat: repeat;
+    animation-name: movingstars;
+    animation-duration: 110s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bigStars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("assets/big_stars.png");
+    background-color: transparent;
+    background-repeat: repeat;
+    animation-name: movingstars;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    animation-name: showup;
+    animation-duration: 8s;
+    animation-timing-function: cubic-bezier(0.32, 0.04, 0, 1.42);
+    position: relative;
+    animation-iteration-count: 1;
+}
+
+.characterProfile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+    height: 300px;
+    object-fit: scale-down;
+    animation-name: movinglogo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.characterImg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    animation-name: movingImg;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.portal {
+    margin-top: 5%;
+    position: absolute;
+    background-image: url("assets/portal/portal_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    height: 80vh;
+    width: 80vh;
+
+    animation-name: portal;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.portal_blur {
+    margin-top: 5%;
+    position: absolute;
+    background-color: #34ef28;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    height: 80vh;
+    width: 80vh;
+    animation-name: portal;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(50px)
+}
+
+.portal1 {
+    margin-top: 5%;
+    position: absolute;
+    background-image: url("assets/portal/portal_layer1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 80vh;
+    width: 80vh;
+    animation-name: portal_rotate;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.portal2 {
+    margin-top: 5%;
+    position: absolute;
+    background-image: url("assets/portal/portal_layer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 80vh;
+    width: 80vh;
+    animation-name: portal_rotate;
+    animation-duration: 7500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.portal3 {
+    margin-top: 5%;
+    position: absolute;
+    background-image: url("assets/portal/portal_layer3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 80vh;
+    width: 80vh;
+    animation-name: portal_rotate_reverse;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.portal4 {
+    margin-top: 5%;
+    position: absolute;
+    background-image: url("assets/portal/portal_layer4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 80vh;
+    width: 80vh;
+    animation-name: portal_rotate_reverse;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+//*// KeyFrames //*//
+
+@keyframes movingstars {
+    from {
+        background-position-y: 2000px;
+    }
+
+    to {
+        background-position-y: -2000px;
+    }
+}
+
+@keyframes movinglogo {
+    from {
+        transform: rotateZ(-3deg);
+        margin-top: 1%;
+        scale: 95%;
+    }
+
+    to {
+        transform: rotateZ(3deg);
+        margin-top: 3%;
+        scale: 110%;
+    }
+}
+
+@keyframes movingImg {
+    from {
+        transform: rotateZ(-2deg);
+        margin-top: 1%;
+        scale: 95%;
+        border-radius: 10% 100% 7% 82%;
+        opacity: 0.8;
+    }
+
+    to {
+        transform: rotateZ(2deg);
+        margin-top: 2%;
+        scale: 110%;
+        border-radius: 90% 4% 70% 11%;
+        opacity: 0.1;
+    }
+}
+
+@keyframes portal {
+
+    0%,
+    100% {
+        border-radius: 72% 86% 100% 58% / 72% 92% 86% 78%;
+    }
+
+    10% {
+        border-radius: 92% 72% 63% 79% / 90% 85% 66% 70%;
+    }
+
+    20% {
+        border-radius: 85% 64% 88% 67% / 85% 62% 100% 94%;
+    }
+
+    30% {
+        border-radius: 67% 90% 76% 87% / 64% 100% 70% 88%;
+    }
+
+    40% {
+        border-radius: 90% 76% 68% 100% / 79% 70% 82% 68%;
+    }
+
+    50% {
+        border-radius: 79% 68% 90% 70% / 97% 92% 67% 79%;
+    }
+
+    60% {
+        border-radius: 100% 92% 74% 89% / 85% 74% 98% 100%;
+    }
+
+    70% {
+        border-radius: 92% 80% 62% 70% / 80% 67% 75% 81%;
+    }
+
+    80% {
+        border-radius: 80% 66% 79% 100% / 100% 84% 60% 63%;
+    }
+
+    90% {
+        border-radius: 67% 89% 87% 79% / 72% 63% 76% 98%;
+    }
+}
+
+@keyframes portal_rotate {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes portal_rotate_reverse {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes showup {
+
+    from {
+        scale: 0%;
+    }
+
+    to {
+        scale: 100%
+    }
+}
