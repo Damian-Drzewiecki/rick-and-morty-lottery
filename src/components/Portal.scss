@@ -1,0 +1,268 @@
+.portal_container {
+    margin-top: 10vh;
+    width: 70vh;
+    height: 70vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characterImg {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    filter: contrast(120%);
+    border: 3vh solid #5cae4a;
+    position: absolute;
+    animation-name: movingImg;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.imgFade {
+    margin-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation-name: logofade;
+    animation-duration: 6000ms;
+    animation-iteration-count: 1;
+}
+
+.portal {
+    position: absolute;
+    background-image: url("../assets/portal/portal_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    width: 100%;
+    height: 100%;
+    animation-name: portal;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.portal_blur {
+    position: absolute;
+    background-color: #34ef28;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    height: 100%;
+    width: 100%;
+    animation-name: portal;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(5vh)
+}
+
+.portal1 {
+    position: absolute;
+    background-image: url("../assets/portal/portal_layer1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    animation-name: portal_rotate;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.portal2 {
+    position: absolute;
+    background-image: url("../assets/portal/portal_layer2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    animation-name: portal_rotate;
+    animation-duration: 7500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.portal3 {
+    position: absolute;
+    background-image: url("../assets/portal/portal_layer3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    animation-name: portal_rotate_reverse;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.portal4 {
+    position: absolute;
+    background-image: url("../assets/portal/portal_layer4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+    border-radius: 100%;
+    height: 100%;
+    width: 100%;
+    animation-name: portal_rotate_reverse;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+//*// KeyFrames //*//
+
+@keyframes movingImg {
+
+    0%,
+    100% {
+        border-radius: 72% 86% 100% 58% / 72% 92% 86% 78%;
+        scale: 50%;
+        margin-top: 6%;
+    }
+
+    10% {
+        border-radius: 92% 72% 63% 79% / 90% 85% 66% 70%;
+    }
+
+    20% {
+        border-radius: 85% 64% 88% 67% / 85% 62% 100% 94%;
+    }
+
+    30% {
+        border-radius: 67% 90% 76% 87% / 64% 100% 70% 88%;
+        margin-right: 2%;
+    }
+
+    40% {
+        border-radius: 90% 76% 68% 100% / 79% 70% 82% 68%;
+
+    }
+
+    50% {
+        border-radius: 79% 68% 90% 70% / 97% 92% 67% 79%;
+        scale: 60%;
+
+        margin-top: 5%;
+    }
+
+    60% {
+        border-radius: 100% 92% 74% 89% / 85% 74% 98% 100%;
+
+    }
+
+    70% {
+        border-radius: 92% 80% 62% 70% / 80% 67% 75% 81%;
+        margin-left: 2%;
+    }
+
+    80% {
+        border-radius: 80% 66% 79% 100% / 100% 84% 60% 63%;
+    }
+
+    90% {
+        border-radius: 67% 89% 87% 79% / 72% 63% 76% 98%;
+    }
+}
+
+@keyframes portal {
+
+    0%,
+    100% {
+        border-radius: 72% 86% 100% 58% / 72% 92% 86% 78%;
+    }
+
+    10% {
+        border-radius: 92% 72% 63% 79% / 90% 85% 66% 70%;
+    }
+
+    20% {
+        border-radius: 85% 64% 88% 67% / 85% 62% 100% 94%;
+    }
+
+    30% {
+        border-radius: 67% 90% 76% 87% / 64% 100% 70% 88%;
+    }
+
+    40% {
+        border-radius: 90% 76% 68% 100% / 79% 70% 82% 68%;
+    }
+
+    50% {
+        border-radius: 79% 68% 90% 70% / 97% 92% 67% 79%;
+    }
+
+    60% {
+        border-radius: 100% 92% 74% 89% / 85% 74% 98% 100%;
+    }
+
+    70% {
+        border-radius: 92% 80% 62% 70% / 80% 67% 75% 81%;
+    }
+
+    80% {
+        border-radius: 80% 66% 79% 100% / 100% 84% 60% 63%;
+    }
+
+    90% {
+        border-radius: 67% 89% 87% 79% / 72% 63% 76% 98%;
+    }
+}
+
+@keyframes portal_rotate {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes portal_rotate_reverse {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes logofade {
+
+    0%,
+    30% {
+        opacity: 0;
+        pointer-events: none;
+        filter: blur(1000px);
+    }
+
+    99% {
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        pointer-events: all;
+    }
+}

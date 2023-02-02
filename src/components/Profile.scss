@@ -1,0 +1,94 @@
+.characterProfile {
+    max-height: 100vh;
+    max-width: 45vh;
+    height: 100vh;
+    width: 45vw;
+    font-family: 'Press Start 2P', cursive;
+    margin-right: 70%;
+    font-size: 2vh;
+    color: #34ef28;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    box-shadow: 0.3vh 0.5vh #34ef28;
+}
+
+.p1 {
+    animation-name: fade;
+    animation-duration: 6000ms;
+    animation-iteration-count: 1;
+}
+
+.p2 {
+    animation-name: fade;
+    animation-duration: 6200ms;
+    animation-iteration-count: 1;
+}
+
+.p3 {
+    animation-name: fade;
+    animation-duration: 6400ms;
+    animation-iteration-count: 1;
+}
+
+.p4 {
+    animation-name: fade;
+    animation-duration: 6600ms;
+    animation-iteration-count: 1;
+}
+
+.p5 {
+    animation-name: fade;
+    animation-duration: 6800ms;
+    animation-iteration-count: 1;
+}
+
+.p6 {
+    animation-name: fade;
+    animation-duration: 7000ms;
+    animation-iteration-count: 1;
+}
+
+.p7 {
+    animation-name: fade;
+    animation-duration: 7200ms;
+    animation-iteration-count: 1;
+}
+
+.dot {
+    box-shadow: none;
+    animation-name: dotanim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+//*// KeyFrames //*//
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dotanim {
+    from {
+        color: transparentize($color: #000000, $amount: 0)
+    }
+
+    to {
+        color: #34ef28;
+    }
+}
