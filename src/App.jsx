@@ -43,9 +43,9 @@ export default function App() {
     fetchData()
   }, [])
 
-  // useEffect(() => {
-  //   play()
-  // }, [play])
+  useEffect(() => {
+    play()
+  }, [play])
 
 
   return (
