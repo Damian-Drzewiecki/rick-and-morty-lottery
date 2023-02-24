@@ -8,27 +8,7 @@
     animation-name: logofade;
     animation-duration: 4000ms;
     animation-iteration-count: 1;
-}
-
-@media only screen and (max-aspect-ratio: 176/100) {
-    .logoFade {
-        margin-left: 30vw;
-    }
-}
-
-@media only screen and (max-aspect-ratio: 120/85) {
-    .logoFade {
-        margin-left: 0;
-        width: 70vh;
-        height: 26vh;
-    }
-}
-
-@media only screen and (max-aspect-ratio: 53/68) {
-    .logoFade {
-        width: 75vw;
-        height: 31vw;
-    }
+    pointer-events: none;
 }
 
 .logo_and {
@@ -112,5 +92,28 @@
         transform: rotateZ(3deg);
         margin-top: 2%;
         scale: 110%;
+    }
+}
+
+//*// Responsive //*//
+
+@media only screen and (max-aspect-ratio: 176/100) {
+    .logoFade {
+        margin-left: 30vw;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 120/85) {
+    .logoFade {
+        margin-left: 0;
+        width: 70vh;
+        height: 26vh;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 53/68) {
+    .logoFade {
+        width: 75vw;
+        height: 31vw;
     }
 }

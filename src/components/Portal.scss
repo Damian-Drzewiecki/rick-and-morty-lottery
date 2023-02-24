@@ -15,39 +15,20 @@
     filter: contrast(120%);
     border: 3vh solid #5cae4a;
     position: absolute;
-    animation-name: movingImg;
-    animation-duration: 7s;
+    animation: movingImg 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@media only screen and (max-aspect-ratio: 176/100) {
-    .portal_container {
-        margin-left: 30vw;
-    }
-
-    .characterImg {
-        border: 2vw solid #5cae4a;
-    }
+.characterImgInAndOut {
+    animation: movingImg 6s, changingCharacter 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-@media only screen and (max-aspect-ratio: 120/85) {
-    .portal_container {
-        margin-left: 0;
-        width: 60vh;
-        height: 60vh;
-    }
-}
-
-@media only screen and (max-aspect-ratio: 53/68) {
-    .portal_container {
-        width: 65vw;
-        height: 65vw;
-    }
-}
-
-.imgFade {
+.imgFadeIn {
     margin-top: 5%;
     position: absolute;
     display: flex;
@@ -87,7 +68,7 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    filter: blur(5vh)
+    filter: blur(5vh);
 }
 
 .portal1 {
@@ -152,6 +133,21 @@
 }
 
 //*// KeyFrames //*//
+@keyframes changingCharacter {
+
+    0%,
+    100% {
+        opacity: 1;
+        pointer-events: none;
+        filter: blur(0px);
+    }
+
+    50% {
+        opacity: 0;
+        pointer-events: none;
+        filter: blur(400px);
+    }
+}
 
 @keyframes movingImg {
 
@@ -289,5 +285,47 @@
         opacity: 1;
         filter: blur(0px);
         pointer-events: all;
+    }
+}
+
+@keyframes logofadeout {
+
+    0% {
+        opacity: 1;
+        pointer-events: none;
+        filter: blur(0px);
+    }
+
+    100% {
+        opacity: 0;
+        filter: blur(1000px);
+        pointer-events: none;
+    }
+}
+
+//*// Responsive //*//
+
+@media only screen and (max-aspect-ratio: 176/100) {
+    .portal_container {
+        margin-left: 30vw;
+    }
+
+    .characterImg {
+        border: 2vw solid #5cae4a;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 120/85) {
+    .portal_container {
+        margin-left: 0;
+        width: 60vh;
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 53/68) {
+    .portal_container {
+        width: 65vw;
+        height: 65vw;
     }
 }

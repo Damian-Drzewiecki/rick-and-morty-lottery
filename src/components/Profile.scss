@@ -15,6 +15,239 @@
     align-content: center;
 }
 
+p {
+    box-shadow: 0.3vh 0.5vh #34ef28;
+}
+
+.p1 {
+    animation: fade 6000ms;
+}
+
+.p1in {
+    animation: clickAnim1 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.p2 {
+    animation: fade 6200ms;
+    animation-iteration-count: 1;
+}
+
+.p2in {
+    animation: clickAnim2 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.p3 {
+    animation: fade 6400ms;
+    animation-iteration-count: 1;
+}
+
+.p3in {
+    animation: clickAnim3 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.p4 {
+    animation: fade 6600ms;
+    animation-iteration-count: 1;
+}
+
+.p4in {
+    animation: clickAnim4 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.p5 {
+    animation: fade 6800ms;
+    animation-iteration-count: 1;
+}
+
+.p5in {
+    animation: clickAnim5 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.p6 {
+    animation: fade 7000ms;
+    animation-iteration-count: 1;
+}
+
+.p6in {
+    animation: clickAnim6 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.p7 {
+    animation: fade 7200ms;
+    animation-iteration-count: 1;
+}
+
+.p7in {
+    animation: clickAnim7 2s;
+    animation-iteration-count: 1;
+}
+
+//
+
+.dot {
+    box-shadow: none;
+    animation: dotanim 1s;
+    animation-iteration-count: infinite;
+}
+
+.dotClick {
+    animation: dotClickAnim 2s;
+    animation-iteration-count: 1;
+}
+
+//*// KeyFrames //*//
+
+@keyframes dotClickAnim {
+
+    0%,
+    100% {
+        opacity: 100%;
+    }
+
+    8%,
+    92% {
+        scale: 0%;
+    }
+}
+
+@keyframes clickAnim6 {
+
+    0%,
+    100% {
+        scale: 100%;
+    }
+
+    8%,
+    92% {
+        display: none;
+        scale: 0%;
+    }
+}
+
+@keyframes clickAnim5 {
+
+    0%,
+    8%,
+    92%,
+    100% {
+        scale: 100%;
+    }
+
+    16%,
+    84% {
+        display: none;
+        scale: 0%;
+    }
+}
+
+@keyframes clickAnim4 {
+
+    0%,
+    16%,
+    84%,
+    100% {
+        scale: 100%;
+    }
+
+    24%,
+    76% {
+        display: none;
+        scale: 0%;
+    }
+}
+
+@keyframes clickAnim3 {
+
+    0%,
+    24%,
+    76%,
+    100% {
+        scale: 100%;
+    }
+
+    32%,
+    68% {
+        display: none;
+        scale: 0%;
+    }
+}
+
+@keyframes clickAnim2 {
+
+    0%,
+    32%,
+    68%,
+    100% {
+        scale: 100%;
+    }
+
+    40%,
+    60% {
+        display: none;
+        scale: 0%;
+    }
+}
+
+@keyframes clickAnim1 {
+
+    0%,
+    40%,
+    60%,
+    100% {
+        scale: 100%;
+    }
+
+    48%,
+    52% {
+        display: none;
+        scale: 0%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dotanim {
+    from {
+        color: transparentize($color: #000000, $amount: 0)
+    }
+
+    to {
+        color: #34ef28;
+    }
+}
+
+//*// Responsive //*//
+
 @media only screen and (max-aspect-ratio: 176/100) {
     .characterProfile {
         margin-right: 60vw;
@@ -43,84 +276,5 @@
         margin-top: 40vh;
         margin-left: 57%;
         font-size: 3vw;
-    }
-}
-
-p {
-    box-shadow: 0.3vh 0.5vh #34ef28;
-}
-
-.p1 {
-    animation-name: fade;
-    animation-duration: 6000ms;
-    animation-iteration-count: 1;
-}
-
-.p2 {
-    animation-name: fade;
-    animation-duration: 6200ms;
-    animation-iteration-count: 1;
-}
-
-.p3 {
-    animation-name: fade;
-    animation-duration: 6400ms;
-    animation-iteration-count: 1;
-}
-
-.p4 {
-    animation-name: fade;
-    animation-duration: 6600ms;
-    animation-iteration-count: 1;
-}
-
-.p5 {
-    animation-name: fade;
-    animation-duration: 6800ms;
-    animation-iteration-count: 1;
-}
-
-.p6 {
-    animation-name: fade;
-    animation-duration: 7000ms;
-    animation-iteration-count: 1;
-}
-
-.p7 {
-    animation-name: fade;
-    animation-duration: 7200ms;
-    animation-iteration-count: 1;
-}
-
-.dot {
-    box-shadow: none;
-    animation-name: dotanim;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-//*// KeyFrames //*//
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    95% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes dotanim {
-    from {
-        color: transparentize($color: #000000, $amount: 0)
-    }
-
-    to {
-        color: #34ef28;
     }
 }

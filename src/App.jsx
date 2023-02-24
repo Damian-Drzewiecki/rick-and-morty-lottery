@@ -26,6 +26,7 @@ export default function App() {
   const [maxCount, setMaxCount] = useState()
   const [character, setCharacter] = useState(null)
   const [play] = useSound(backgroundSound)
+  const [imgClick, setImgClick] = useState()
 
   const getRandomCharacter = useCallback(async () => {
     const randomCharacter = await fetchCharacterById(getRandomCharacterId(maxCount))
@@ -55,8 +56,8 @@ export default function App() {
       <div className="bigStars"></div>
 
       <div className='container'>
-        <Portal character={character} getRandomCharacter={getRandomCharacter} />
-        <Profile character={character} />
+        <Portal character={character} setImgClick={setImgClick} getRandomCharacter={getRandomCharacter} />
+        <Profile character={character} imgClick={imgClick} />
         <Logo />
       </div>
 
