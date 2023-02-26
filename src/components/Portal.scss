@@ -1,4 +1,4 @@
-.portal_container {
+.portal {
     margin-top: 10vh;
     width: 70vh;
     height: 70vh;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.characterImg {
+.portal__image {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -21,14 +21,14 @@
     animation-direction: alternate;
 }
 
-.characterImgInAndOut {
+.portal__image--animation {
     animation: movingImg 6s, changingCharacter 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-.imgFadeIn {
+.portal__image_container {
     margin-top: 5%;
     position: absolute;
     display: flex;
@@ -41,95 +41,57 @@
     animation-iteration-count: 1;
 }
 
-.portal {
-    position: absolute;
+.portal__element--background {
     background-image: url("../assets/portal/portal_background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: scale-down;
     border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-    width: 100%;
-    height: 100%;
     animation-name: portal;
     animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-.portal_blur {
-    position: absolute;
+.portal__element--blur {
     background-color: #34ef28;
     border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
-    height: 100%;
-    width: 100%;
     animation-name: portal;
     animation-duration: 7s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     animation-direction: alternate;
     filter: blur(5vh);
 }
 
-.portal1 {
+.portal__element {
     position: absolute;
-    background-image: url("../assets/portal/portal_layer1.png");
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: scale-down;
     border-radius: 100%;
     height: 100%;
     width: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.portal__element--lime {
+    background-image: url("../assets/portal/portal_layer1.png");
     animation-name: portal_rotate;
     animation-duration: 3000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-.portal2 {
-    position: absolute;
+.portal__element--yellow {
     background-image: url("../assets/portal/portal_layer2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: scale-down;
-    border-radius: 100%;
-    height: 100%;
-    width: 100%;
     animation-name: portal_rotate;
     animation-duration: 7500ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
 }
 
-.portal3 {
-    position: absolute;
+.portal__element--green {
     background-image: url("../assets/portal/portal_layer3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: scale-down;
-    border-radius: 100%;
-    height: 100%;
-    width: 100%;
     animation-name: portal_rotate_reverse;
     animation-duration: 5000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-.portal4 {
-    position: absolute;
+.portal__element--white {
     background-image: url("../assets/portal/portal_layer4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: scale-down;
-    border-radius: 100%;
-    height: 100%;
-    width: 100%;
     animation-name: portal_rotate_reverse;
-    animation-duration: 9s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-duration: 9000ms;
 }
 
 //*// KeyFrames //*//

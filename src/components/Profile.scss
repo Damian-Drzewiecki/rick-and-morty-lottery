@@ -1,4 +1,4 @@
-.characterProfile {
+.character {
     position: absolute;
     max-height: 100vh;
     max-width: 45vh;
@@ -19,98 +19,93 @@ p {
     box-shadow: 0.3vh 0.5vh #34ef28;
 }
 
-.p1 {
+.character__id {
     animation: fade 6000ms;
 }
 
-.p1in {
+.character__id--anim {
     animation: clickAnim1 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.p2 {
+.character__name {
     animation: fade 6200ms;
     animation-iteration-count: 1;
 }
 
-.p2in {
+.character__name--anim {
     animation: clickAnim2 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.p3 {
+.character__gender {
     animation: fade 6400ms;
     animation-iteration-count: 1;
 }
 
-.p3in {
+.character__gender--anim {
     animation: clickAnim3 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.p4 {
+.character__species {
     animation: fade 6600ms;
     animation-iteration-count: 1;
 }
 
-.p4in {
+.character__species--anim {
     animation: clickAnim4 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.p5 {
+.character__status {
     animation: fade 6800ms;
     animation-iteration-count: 1;
 }
 
-.p5in {
+.character__status--anim {
     animation: clickAnim5 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.p6 {
+.character__type {
     animation: fade 7000ms;
     animation-iteration-count: 1;
 }
 
-.p6in {
+.character__type--anim {
     animation: clickAnim6 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.p7 {
+.character__dot {
     animation: fade 7200ms;
     animation-iteration-count: 1;
 }
 
-.p7in {
-    animation: clickAnim7 2s;
+.character__dot--anim {
+    animation: dotClickAnim 2s;
     animation-iteration-count: 1;
 }
 
 //
 
-.dot {
+.character__dot--flashes {
     box-shadow: none;
     animation: dotanim 1s;
     animation-iteration-count: infinite;
-}
-
-.dotClick {
-    animation: dotClickAnim 2s;
-    animation-iteration-count: 1;
 }
 
 //*// KeyFrames //*//

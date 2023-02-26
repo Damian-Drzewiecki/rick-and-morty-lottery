@@ -1,45 +1,29 @@
-.smallStars {
+.stars {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-color: transparent;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    background-repeat: repeat;
+    animation-name: movingstars;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.stars--small {
     background-image: url("assets/small_stars.png");
-    background-color: transparent;
-    background-repeat: repeat-x;
-    background-color: transparent;
-    background-repeat: repeat;
-    animation-name: movingstars;
     animation-duration: 160s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-.mediumStars {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.stars--medium {
     background-image: url("assets/medium_stars.png");
-    background-color: transparent;
-    background-repeat: repeat-x;
-    background-color: transparent;
-    background-repeat: repeat;
-    animation-name: movingstars;
     animation-duration: 110s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
-.bigStars {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.stars--big {
     background-image: url("assets/big_stars.png");
-    background-color: transparent;
-    background-repeat: repeat;
-    animation-name: movingstars;
     animation-duration: 50s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 
 .container {

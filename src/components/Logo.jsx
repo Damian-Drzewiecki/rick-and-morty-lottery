@@ -7,11 +7,11 @@ import './Logo.scss';
 
 export default function Logo() {
     return (
-        <div className="logoFade">
-            <img className="logo_and" src={logo_and} alt="Logo_and" />
-            <img className="logo_characters" src={logo_characters} alt="Logo_characters" />
-            <img className="logo_morty" src={logo_morty} alt="Logo_morty" />
-            <img className="logo_rick" src={logo_rick} alt="Logo_rick" />
+        <div className="logo">
+            <img className="logo__word" src={logo_and} alt="and word" />
+            <img className="logo__word" src={logo_characters} alt="characters word" />
+            <img className="logo__word" src={logo_morty} alt="morty word" />
+            <img className="logo__word" src={logo_rick} alt="rick word" />
         </div>
     )
 }

@@ -48,12 +48,11 @@ export default function App() {
     play()
   }, [play])
 
-
   return (
     <div>
-      <div className="smallStars"></div>
-      <div className="mediumStars"></div>
-      <div className="bigStars"></div>
+      <div className="stars stars--small"></div>
+      <div className="stars stars--medium"></div>
+      <div className="stars stars--big"></div>
 
       <div className='container'>
         <Portal character={character} setImgClick={setImgClick} getRandomCharacter={getRandomCharacter} />
