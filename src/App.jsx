@@ -1,6 +1,6 @@
 import './App.scss';
 import { useCallback, useEffect, useState } from 'react';
-import useSound from 'use-sound';
+import ReactAudioPlayer from 'react-audio-player';
 import backgroundSound from './assets/rickandmortytheme.mp3';
 import Portal from './components/Portal';
 import Profile from './components/Profile';
@@ -25,7 +25,6 @@ function getRandomCharacterId(maxRange) {
 export default function App() {
   const [maxCount, setMaxCount] = useState()
   const [character, setCharacter] = useState(null)
-  const [play] = useSound(backgroundSound)
   const [imgClick, setImgClick] = useState()
 
   const getRandomCharacter = useCallback(async () => {
@@ -44,12 +43,13 @@ export default function App() {
     fetchData()
   }, [])
 
-  useEffect(() => {
-    play()
-  }, [play])
-
   return (
     <div>
+      <ReactAudioPlayer
+        src={backgroundSound}
+        autoPlay
+        loop="true"
+      />
       <div className="stars stars--small"></div>
       <div className="stars stars--medium"></div>
       <div className="stars stars--big"></div>
