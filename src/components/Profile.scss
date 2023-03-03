@@ -244,13 +244,13 @@ p {
 //*// Responsive //*//
 
 @media only screen and (max-aspect-ratio: 176/100) {
-    .characterProfile {
+    .character {
         margin-right: 60vw;
     }
 }
 
 @media only screen and (max-aspect-ratio: 120/85) {
-    .characterProfile {
+    .character {
         flex-direction: row;
         gap: 5vh;
         width: 80vw;
@@ -261,7 +261,7 @@ p {
 }
 
 @media only screen and (max-aspect-ratio: 53/68) {
-    .characterProfile {
+    .character {
         flex-direction: column;
         gap: 0px;
         max-height: 100vw;

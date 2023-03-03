@@ -1,6 +1,5 @@
 import React from "react";
 import './Profile.scss';
-import classNames from "classnames";
 
 export default function Profile(props) {
 
