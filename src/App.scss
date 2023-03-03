@@ -37,6 +37,13 @@
     animation-timing-function: cubic-bezier(0.32, 0.04, 0, 1.42);
     position: relative;
     animation-iteration-count: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 //*// KeyFrames //*//

@@ -39,7 +39,13 @@
     animation-name: logofade;
     animation-duration: 6000ms;
     animation-iteration-count: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .portal__element--background {
