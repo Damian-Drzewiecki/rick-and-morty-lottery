@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-lottery/static/css/main.9a57221a.css",
-    "main.js": "/rick-and-morty-lottery/static/js/main.94b3e4fa.js",
+    "main.css": "/rick-and-morty-lottery/static/css/main.2310642c.css",
+    "main.js": "/rick-and-morty-lottery/static/js/main.3531870f.js",
     "static/js/787.28cb0dcd.chunk.js": "/rick-and-morty-lottery/static/js/787.28cb0dcd.chunk.js",
     "static/media/rickandmortytheme.mp3": "/rick-and-morty-lottery/static/media/rickandmortytheme.89b82813173a8d30213d.mp3",
     "static/media/portal_layer4.png": "/rick-and-morty-lottery/static/media/portal_layer4.01b76525c480dfb38c31.png",
@@ -17,12 +17,12 @@
     "static/media/medium_stars.png": "/rick-and-morty-lottery/static/media/medium_stars.3e9cfc9cebb73d6c49a3.png",
     "static/media/big_stars.png": "/rick-and-morty-lottery/static/media/big_stars.210df9d896094eae5653.png",
     "index.html": "/rick-and-morty-lottery/index.html",
-    "main.9a57221a.css.map": "/rick-and-morty-lottery/static/css/main.9a57221a.css.map",
-    "main.94b3e4fa.js.map": "/rick-and-morty-lottery/static/js/main.94b3e4fa.js.map",
+    "main.2310642c.css.map": "/rick-and-morty-lottery/static/css/main.2310642c.css.map",
+    "main.3531870f.js.map": "/rick-and-morty-lottery/static/js/main.3531870f.js.map",
     "787.28cb0dcd.chunk.js.map": "/rick-and-morty-lottery/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a57221a.css",
-    "static/js/main.94b3e4fa.js"
+    "static/css/main.2310642c.css",
+    "static/js/main.3531870f.js"
   ]
 }
